@@ -31,7 +31,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: |
-        echo Testing Project
+        set -e
+        echo "Starting Maven verification..."
         cd "code/Lab 5 JavaFX Sample/"
         mvn --batch-mode --update-snapshots clean verify
-        cd ../..
