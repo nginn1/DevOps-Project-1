@@ -33,5 +33,5 @@ jobs:
       run: |
         set -e
         echo "Starting Maven verification..."
-        cd "code/Lab 5 JavaFX Sample/"
+        cd "code/Nathan Ginn Project 1/"
         mvn --batch-mode --update-snapshots clean verify
