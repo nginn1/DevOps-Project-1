@@ -15,7 +15,7 @@
         <menus>
           <Menu fx:id="collectionMenuButton" mnemonicParsing="false" text="Collection">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem fx:id="deleteCollectionMenuItem" mnemonicParsing="false" text="Delete Collection" />
             </items>
           </Menu>
         </menus>

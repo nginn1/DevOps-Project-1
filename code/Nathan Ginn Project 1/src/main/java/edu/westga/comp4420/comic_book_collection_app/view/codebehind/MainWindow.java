@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import edu.westga.comp4420.comic_book_collection_app.model.Series;
 
@@ -30,6 +31,9 @@ public class MainWindow {
 
     @FXML
     private Menu collectionMenuButton;
+	
+	@FXML
+    private MenuItem deleteCollectionMenuItem;
 
     @FXML
     private Label coloristLabel;
