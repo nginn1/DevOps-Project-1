@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MainWindow.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">comic_book_collection_app</a> &gt; <a href="index.source.html" class="el_package">edu.westga.comp4420.comic_book_collection_app.view.codebehind</a> &gt; <span class="el_source">MainWindow.java</span></div><h1>MainWindow.java</h1><pre class="source lang-java linenums">package edu.westga.comp4420.comic_book_collection_app.view.codebehind;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.layout.AnchorPane;
+import edu.westga.comp4420.comic_book_collection_app.model.Series;
+
+<span class="nc bnc" id="L15" title="All 2 branches missed.">public class MainWindow {</span>
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
+
+    @FXML
+    private Button addIssueButton;
+
+    @FXML
+    private Button addSeriesButton;
+
+    @FXML
+    private ListView&lt;Series&gt; collectionListView;
+
+    @FXML
+    private Menu collectionMenuButton;
+	
+	@FXML
+    private MenuItem deleteCollectionMenuItem;
+
+    @FXML
+    private Label coloristLabel;
+
+    @FXML
+    private Label inkerLabel;
+
+    @FXML
+    private Label issueNumberLabel;
+
+    @FXML
+    private AnchorPane mainWindowPane;
+
+    @FXML
+    private MenuBar menuBar;
+
+    @FXML
+    private Label pencilerLabel;
+
+    @FXML
+    private Label publisherLabel;
+
+    @FXML
+    private Label seriesLabel;
+
+    @FXML
+    private Button sortAscendingButton;
+
+    @FXML
+    private Button sortDescendingButton;
+
+    @FXML
+    private Label writerLabel;
+
+    @FXML
+    void initialize() {
+<span class="nc bnc" id="L73" title="All 4 branches missed.">        assert this.addIssueButton != null : &quot;fx:id=\&quot;addIssueButton\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L74" title="All 4 branches missed.">        assert this.addSeriesButton != null : &quot;fx:id=\&quot;addSeriesButton\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L75" title="All 4 branches missed.">        assert this.collectionListView != null : &quot;fx:id=\&quot;collectionListView\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L76" title="All 4 branches missed.">        assert this.collectionMenuButton != null : &quot;fx:id=\&quot;collectionMenuButton\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L77" title="All 4 branches missed.">        assert this.coloristLabel != null : &quot;fx:id=\&quot;coloristLabel\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L78" title="All 4 branches missed.">        assert this.inkerLabel != null : &quot;fx:id=\&quot;inkerLabel\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L79" title="All 4 branches missed.">        assert this.issueNumberLabel != null : &quot;fx:id=\&quot;issueNumberLabel\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L80" title="All 4 branches missed.">        assert this.mainWindowPane != null : &quot;fx:id=\&quot;mainWindowPane\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L81" title="All 4 branches missed.">        assert this.menuBar != null : &quot;fx:id=\&quot;menuBar\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L82" title="All 4 branches missed.">        assert this.pencilerLabel != null : &quot;fx:id=\&quot;pencilerLabel\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L83" title="All 4 branches missed.">        assert this.publisherLabel != null : &quot;fx:id=\&quot;publisherLabel\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L84" title="All 4 branches missed.">        assert this.seriesLabel != null : &quot;fx:id=\&quot;seriesLabel\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L85" title="All 4 branches missed.">        assert this.sortAscendingButton != null : &quot;fx:id=\&quot;sortAscendingButton\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L86" title="All 4 branches missed.">        assert this.sortDescendingButton != null : &quot;fx:id=\&quot;sortDescendingButton\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc bnc" id="L87" title="All 4 branches missed.">        assert this.writerLabel != null : &quot;fx:id=\&quot;writerLabel\&quot; was not injected: check your FXML file 'MainWindow.fxml'.&quot;;</span>
+<span class="nc" id="L88">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

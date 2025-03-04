@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+comic_book_collection_app,edu.westga.comp4420.comic_book_collection_app.view.codebehind,MainWindow,162,0,62,0,17,0,34,0,3,0
+comic_book_collection_app,edu.westga.comp4420.comic_book_collection_app.model,Series,0,163,0,32,0,50,0,25,0,9
+comic_book_collection_app,edu.westga.comp4420.comic_book_collection_app.model,Issue,0,100,0,18,0,30,0,15,0,6
+comic_book_collection_app,edu.westga.comp4420.comic_book_collection_app.model,Collection,0,51,0,8,0,14,0,9,0,5
+comic_book_collection_app,edu.westga.comp4420.comic_book_collection_app,Main,27,0,0,0,9,0,3,0,3,0
