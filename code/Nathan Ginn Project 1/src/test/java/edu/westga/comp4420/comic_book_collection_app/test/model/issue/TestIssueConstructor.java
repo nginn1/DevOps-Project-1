@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import edu.westga.comp4420.comic_book_collection_app.model.Issue;
 
-class TestConstructor {
+class TestIssueConstructor {
 	
 	@Test
 	public void testConstructorWithValidInput() {

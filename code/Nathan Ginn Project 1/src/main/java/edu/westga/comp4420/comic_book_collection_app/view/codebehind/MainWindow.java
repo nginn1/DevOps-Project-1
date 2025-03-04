@@ -85,7 +85,5 @@ public class MainWindow {
         assert this.sortAscendingButton != null : "fx:id=\"sortAscendingButton\" was not injected: check your FXML file 'MainWindow.fxml'.";
         assert this.sortDescendingButton != null : "fx:id=\"sortDescendingButton\" was not injected: check your FXML file 'MainWindow.fxml'.";
         assert this.writerLabel != null : "fx:id=\"writerLabel\" was not injected: check your FXML file 'MainWindow.fxml'.";
-
     }
-
 }
