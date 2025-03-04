@@ -1,4 +1,4 @@
-package edu.westga.comp4420.javafx_sample;
+package edu.westga.comp4420.comic_book_collection_app;
 
 import java.io.IOException;
 
@@ -11,11 +11,11 @@ import javafx.scene.Scene;
 /**
  * Entry point for the program
  *
- * @author	Comp 4420
- * @version Spring 2024
+ * @author	Nathan Ginn
+ * @version Spring 2025
  */
 public class Main extends Application {
-	public static final String WINDOW_TITLE = "JavaFX Sample";
+	public static final String WINDOW_TITLE = "Comic Book Collection App";
 	public static final String GUI_RESOURCE = "view/codebehind/MainWindow.fxml";
 
 	/**
