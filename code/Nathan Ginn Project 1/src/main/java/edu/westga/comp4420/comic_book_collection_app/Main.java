@@ -17,6 +17,9 @@ import javafx.scene.Scene;
 public class Main extends Application {
 	public static final String WINDOW_TITLE = "Comic Book Collection App";
 	public static final String GUI_RESOURCE = "view/codebehind/MainWindow.fxml";
+	public static final String ADD_SERIES_WINDOW_RESOURCE = "view/codebehind/AddSeriesWindow.fxml";
+	public static final String ADD_ISSUE_WINDOW_RESOURCE = "view/codebehind/AddIssueWindow.fxml";
+	public static final String VIEW_ISSUE_WINDOW_RESOURCE = "view/codebehind/ViewIssueWindow.fxml";
 
 	/**
 	 * JavaFX entry point.

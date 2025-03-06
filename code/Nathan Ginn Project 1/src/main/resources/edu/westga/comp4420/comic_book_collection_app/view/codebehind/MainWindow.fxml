@@ -8,29 +8,25 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane fx:id="mainWindowPane" minHeight="99.0" minWidth="160.0" prefHeight="602.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.westga.comp4420.comic_book_collection_app.view.codebehind.MainWindow">
    <children>
       <MenuBar fx:id="menuBar" layoutX="-5.0" layoutY="2.0" prefHeight="25.0" prefWidth="902.0" AnchorPane.bottomAnchor="577.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu fx:id="collectionMenuButton" mnemonicParsing="false" text="Collection">
             <items>
-              <MenuItem fx:id="deleteCollectionMenuItem" mnemonicParsing="false" text="Delete Collection" />
+              <MenuItem fx:id="deleteCollectionMenuItem" mnemonicParsing="false" onAction="#deleteCollection" text="Delete Collection" />
             </items>
           </Menu>
         </menus>
       </MenuBar>
       <ListView fx:id="collectionListView" layoutX="454.0" layoutY="41.0" prefHeight="547.0" prefWidth="434.0" />
-      <Label fx:id="seriesLabel" layoutX="31.0" layoutY="49.0" text="Series: " />
-      <Label fx:id="issueNumberLabel" layoutX="26.0" layoutY="66.0" text="Issue #:" />
-      <Label fx:id="writerLabel" layoutX="31.0" layoutY="83.0" text="Writer:" />
-      <Label fx:id="pencilerLabel" layoutX="22.0" layoutY="100.0" text="Penciler:" />
-      <Label fx:id="inkerLabel" layoutX="38.0" layoutY="117.0" text="Inker:" />
-      <Label fx:id="coloristLabel" layoutX="24.0" layoutY="134.0" text="Colorist:" />
-      <Label fx:id="publisherLabel" layoutX="17.0" layoutY="151.0" text="Publisher:" />
-      <Button fx:id="addSeriesButton" layoutX="368.0" layoutY="45.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Add Series" />
-      <Button fx:id="addIssueButton" layoutX="368.0" layoutY="79.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Add Issue" />
-      <Button fx:id="sortAscendingButton" layoutX="368.0" layoutY="113.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Sort A - Z" />
-      <Button fx:id="sortDescendingButton" layoutX="368.0" layoutY="147.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Sort Z - A" />
+      <Label fx:id="seriesLabel" layoutX="42.0" layoutY="49.0" text="Title:" />
+      <Label fx:id="writerLabel" layoutX="31.0" layoutY="66.0" text="Writer:" />
+      <Label fx:id="artistLabel" layoutX="36.0" layoutY="83.0" text="Artist:" />
+      <Label fx:id="publisherLabel" layoutX="16.0" layoutY="100.0" text="Publisher:" />
+      <Button fx:id="addSeriesButton" layoutX="368.0" layoutY="45.0" mnemonicParsing="false" onAction="#addSeries" prefHeight="25.0" prefWidth="83.0" text="Add Series" />
+      <Button fx:id="sortAscendingButton" layoutX="368.0" layoutY="78.0" mnemonicParsing="false" onAction="#sortAToZ" prefHeight="25.0" prefWidth="83.0" text="Sort A - Z" />
+      <Button fx:id="sortDescendingButton" layoutX="368.0" layoutY="111.0" mnemonicParsing="false" onAction="#sortZToA" prefHeight="25.0" prefWidth="83.0" text="Sort Z - A" />
+      <Button fx:id="viewSeriesButton" layoutX="368.0" layoutY="145.0" mnemonicParsing="false" onAction="#viewSeries" prefHeight="25.0" prefWidth="83.0" text="View Series" />
    </children>
 </AnchorPane>
