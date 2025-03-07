@@ -49,4 +49,22 @@ class TestCollectionConstructor {
 		assertFalse(collection1.addSeries(series1));
 		assertFalse(collection1.addIssue(issue1));
 	}
+	
+	@Test
+	public void testClearingTheCollection() {
+		Collection collection1 = new Collection();
+		Series series1 = new Series("Batman", "Scott Snyder", "Greg Capullo", "DC");
+		Issue issue1 = new Issue("Batman", 1, "Scott Snyder", "Greg Capullo", "DC");
+		
+		collection1.addSeries(series1);
+		collection1.addIssue(issue1);
+		
+		collection1.clear();
+		
+		List<Series> collection1SeriesList = collection1.getSeriesList();
+		List<Issue> collection1IssueList = collection1.getIssueList();
+		
+		assertEquals(collection1SeriesList.size(), 0);
+		assertEquals(collection1IssueList.size(), 0);
+	}
 }

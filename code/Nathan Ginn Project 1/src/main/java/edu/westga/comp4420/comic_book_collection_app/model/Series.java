@@ -1,11 +1,25 @@
 package edu.westga.comp4420.comic_book_collection_app.model;
 
+/**
+ * Represents a series of a comic books
+ * 
+ * @author Nathan Ginn
+ * @version Spring 2025
+ */
 public class Series {
 	private String title;
 	private String writer;
 	private String artist;
 	private String publisher;
 	
+	/**
+	* Represents a single issue of a comic book series
+	* 
+	* @param title the given title
+	* @param writer the given writer
+	* @param artist the given artist
+	* @param publisher the given publisher
+	*/
 	public Series(String title, String writer, String artist, String publisher) {
 		if (title == null) {
 			throw new NullPointerException("Title must not be null.");
@@ -38,22 +52,47 @@ public class Series {
 		this.publisher = publisher;
 	}
 	
+	/**
+	 * Get the series title
+	 * 
+	 * @return the title of the comic book series
+	 */
 	public String getTitle() {
 		return this.title;
 	}
 	
+	/**
+	 * Get the writer
+	 * 
+	 * @return the writer of the comic book series
+	 */
 	public String getWriter() {
 		return this.writer;
 	}
 	
+	/**
+	 * Get the artist
+	 * 
+	 * @return the artist of the comic book series
+	 */
 	public String getArtist() {
 		return this.artist;
 	}
 	
+	/**
+	 * Get the publisher
+	 * 
+	 * @return the publisher of the comic book series
+	 */
 	public String getPublisher() {
 		return this.publisher;
 	}
 	
+	/**
+	 * Set the title of the series
+	 *
+	 * @param title the given title
+	 */
 	public void setTitle(String title) {
 		if (title == null) {
 			throw new NullPointerException("Title can not be null.");
@@ -65,6 +104,11 @@ public class Series {
 		this.title = title;
 	}
 	
+	/**
+	 * Set the writer
+	 * 
+	 * @param writer the given writer
+	 */
 	public void setWriter(String writer) {
 		if (writer == null) {
 			throw new NullPointerException("Writer can not be null.");
@@ -76,6 +120,11 @@ public class Series {
 		this.writer = writer;
 	}
 	
+	/**
+	 * Set the artist
+	 * 
+	 * @param artist the given artist
+	 */
 	public void setArtist(String artist) {
 		if (artist == null) {
 			throw new NullPointerException("Artist can not be null.");
@@ -87,6 +136,11 @@ public class Series {
 		this.artist = artist;
 	}
 	
+	/**
+	 * Set the publisher
+	 * 
+	 * @param publisher the given publisher
+	 */
 	public void setPublisher(String publisher) {
 		if (publisher == null) {
 			throw new NullPointerException("Publisher can not be null.");

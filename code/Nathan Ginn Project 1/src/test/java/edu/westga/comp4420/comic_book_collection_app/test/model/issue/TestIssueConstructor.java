@@ -67,4 +67,72 @@ class TestIssueConstructor {
 			Issue issue1 = new Issue("Batman", 1, "Scott Snyder", "Greg Capullo", "");
 		});
 	}
+	
+	@Test
+	public void testSettersWithValidInput() {
+		Issue issue1 = new Issue("Batman", 1, "Scott Snyder", "Greg Capullo", "DC");
+		
+		issue1.setSeriesTitle("X-Men");
+		issue1.setIssueNumber(1);
+		issue1.setWriter("Chris Claremont");
+		issue1.setArtist("Jim Lee");
+		issue1.setPublisher("Marvel");
+		
+		assertEquals(issue1.getSeriesTitle(), "X-Men");
+		assertEquals(issue1.getIssueNumber(), 1);
+		assertEquals(issue1.getWriter(), "Chris Claremont");
+		assertEquals(issue1.getArtist(), "Jim Lee");
+		assertEquals(issue1.getPublisher(), "Marvel");
+	}
+	
+	@Test
+	public void testSettersWithNullInput() {
+		Issue issue1 = new Issue("Batman", 1, "Scott Snyder", "Greg Capullo", "DC");
+		
+		assertThrows(NullPointerException.class, () -> {
+			issue1.setSeriesTitle(null);
+		});
+		
+		assertThrows(NullPointerException.class, () -> {
+			issue1.setWriter(null);
+		});
+		
+		assertThrows(NullPointerException.class, () -> {
+			issue1.setArtist(null);
+		});
+		
+		assertThrows(NullPointerException.class, () -> {
+			issue1.setPublisher(null);
+		});
+	}
+	
+	@Test
+	public void testSettersWithEmptyInput() {
+		Issue issue1 = new Issue("Batman", 1, "Scott Snyder", "Greg Capullo", "DC");
+		
+		assertThrows(IllegalArgumentException.class, () -> {
+			issue1.setSeriesTitle("");
+		});
+		
+		assertThrows(IllegalArgumentException.class, () -> {
+			issue1.setWriter("");
+		});
+		
+		assertThrows(IllegalArgumentException.class, () -> {
+			issue1.setArtist("");
+		});
+		
+		assertThrows(IllegalArgumentException.class, () -> {
+			issue1.setPublisher("");
+		});
+	}
+	
+	@Test
+	public void testSetIssueNumberWithNegativeInput() {
+		Issue issue1 = new Issue("Batman", 1, "Scott Snyder", "Greg Capullo", "DC");
+		
+		assertThrows(IllegalArgumentException.class, () -> {
+			issue1.setIssueNumber(-1);
+		});
+	}
 }
