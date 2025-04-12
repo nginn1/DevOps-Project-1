@@ -23,6 +23,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
 import edu.westga.comp4420.comic_book_collection_app.model.Series;
+import edu.westga.comp4420.comic_book_collection_app.model.Collection;
 import edu.westga.comp4420.comic_book_collection_app.Main;
 
 public class MainWindow {
@@ -75,6 +76,16 @@ public class MainWindow {
     @FXML
     private Label writerLabel;
 	
+	private Collection collection = new Collection();
+	
+	public Collection getCollection() {
+		return this.collection;
+	}
+	
+	public void setCollection(Collection newCollection) {
+		this.collection = newCollection;
+	}
+	
 	@FXML
     void addSeries(ActionEvent event) {
 		try {
@@ -102,7 +113,8 @@ public class MainWindow {
 
     @FXML
     void deleteCollection(ActionEvent event) {
-		
+		this.collection.clear();
+		System.out.println("Collection deleted!");
     }
 
     @FXML
