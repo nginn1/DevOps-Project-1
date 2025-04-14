@@ -100,8 +100,9 @@ public class MainWindow {
 			addSeriesStage.initModality(Modality.APPLICATION_MODAL);
 
 			AddSeriesWindow controller = (AddSeriesWindow) loader.getController();
+			controller.setCollection(this.collection);
 			
-			//controller.setItemList(this.groceryItems.getItems());
+			this.collectionListView.setItems(this.collection.getSeriesList());
 
 			addSeriesStage.show();
 		} catch (IOException error) {
@@ -109,6 +110,8 @@ public class MainWindow {
 			errorBox.setContentText("Unable to open add series window");
 			errorBox.showAndWait();
 		}
+		
+		System.out.println(this.collection.toString());
     }
 
     @FXML
