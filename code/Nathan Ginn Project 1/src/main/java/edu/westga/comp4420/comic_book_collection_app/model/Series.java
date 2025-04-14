@@ -151,4 +151,9 @@ public class Series {
 		
 		this.publisher = publisher;
 	}
+	
+	public String toString() {
+		String output = this.title + " " + this.writer + " " + this.artist + " " + this.publisher;
+		return output;
+	}
 }

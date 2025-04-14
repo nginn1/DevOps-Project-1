@@ -1,7 +1,7 @@
 package edu.westga.comp4420.comic_book_collection_app.model;
 
-import java.util.List;
-import java.util.ArrayList;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 /**
  * Represents a users collection of comic books
@@ -10,15 +10,15 @@ import java.util.ArrayList;
  * @version Spring 2025
  */
 public class Collection {
-	private List<Series> seriesList;
-	private List<Issue> issueList;
+	private ObservableList<Series> seriesList;
+	private ObservableList<Issue> issueList;
 	
 	/**
 	 * Constructs a new Collection object
 	 */
 	public Collection() {
-		this.seriesList = new ArrayList<>();
-		this.issueList = new ArrayList<>();
+		this.seriesList = FXCollections.observableArrayList();
+		this.issueList = FXCollections.observableArrayList();
 	}
 	
 	/**
@@ -26,7 +26,7 @@ public class Collection {
 	 * 
 	 * @return the list of comic book series
 	 */
-	public List<Series> getSeriesList() {
+	public ObservableList<Series> getSeriesList() {
 		return this.seriesList;
 	}
 	
@@ -50,7 +50,7 @@ public class Collection {
 	 * 
 	 * @return the list of comic book issues
 	 */
-	public List<Issue> getIssueList() {
+	public ObservableList<Issue> getIssueList() {
 		return this.issueList;
 	}
 	
@@ -75,5 +75,15 @@ public class Collection {
 	public void clear() {
 		this.issueList.clear();
 		this.seriesList.clear();
+	}
+	
+	public String toString() {
+		String output = "";
+		
+		for (Series current: this.seriesList) {
+			output += (current.getTitle() + ", ");
+		}
+		
+		return output;
 	}
 }

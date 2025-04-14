@@ -21,6 +21,11 @@ import javafx.stage.Stage;
 
 //import edu.westga.comp4420.comic_book_collection_app.Main;
 
+import edu.westga.comp4420.comic_book_collection_app.model.Series;
+import edu.westga.comp4420.comic_book_collection_app.model.Collection;
+
+
+
 public class AddSeriesWindow {
 
     @FXML
@@ -61,10 +66,26 @@ public class AddSeriesWindow {
 
     @FXML
     private TextField writerTextField;
+	
+	private Collection collection;
+	
+	public void setCollection(Collection collection) {
+		this.collection = collection;
+	}
 
     @FXML
     void addSeries(ActionEvent event) {
-
+		Series newSeries = new Series(this.titleTextField.getText(), this.writerTextField.getText(), this.artistTextField.getText(), this.publisherTextField.getText());
+		
+		if (this.collection != null) {
+			this.collection.addSeries(newSeries);
+			System.out.println("series added!");
+		} else {
+			System.out.println("series not added!");
+		}
+		
+		Stage stage = (Stage) this.addButton.getScene().getWindow();
+		stage.close();
     }
 
     @FXML
