@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 const fs = require('node:fs');
 const path = require('path');
-const filePath = path.join(__dirname, 'bird.txt');
+const filePath = path.join(__dirname, 'Project.exe');
 app.set('view engine', 'ejs');
 
 //setup bodyparser to extra data from form posts
@@ -24,7 +24,7 @@ app.get('/about', function(req, res) {
 app.get('/api/download_app', (req, res) => {
 	res.download(
 		filePath, 
-		"bird.txt", 
+		"Project.exe", 
 		(err) => {
 			if (err) {
 				console.log("Unable to download file")
