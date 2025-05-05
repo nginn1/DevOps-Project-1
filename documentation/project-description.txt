@@ -1,0 +1,1 @@
+Proposal: A comic book collection app for users to keep track of different series' and issues they own/don't
